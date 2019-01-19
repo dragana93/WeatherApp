@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>WeatherForecast</title>
+<script type="text/javascript" src="script.js"></script>
+</head>
+
+<body onload="caching()">
+	<table>
+	
+	<tr>
+		<td><h3>Departure</h3></td>
+		<td><h3>Destination</h3></td>
+	</tr>
+	
+		<tr>
+			<td>
+				Latitude: <input type="text" id="latitude">
+				Longitude: <input type="text" id="longitude">
+				<input type="button" onclick="loadData()" value="Load data">
+			</td>
+	
+			<td>
+				Latitude: <input type="text" id="latitudeDest">
+				Longitude: <input type="text" id="longitudeDest">
+				<input type="button" onclick="loadDataDest()" value="Load data">
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<p id="dewPoint"></p>
+				<p id="humidity"></p>
+				<p id="temperature"></p>
+			</td>
+			
+			<td>
+				<p id="dewPointDest"></p>
+				<p id="humidityDest"></p>
+				<p id="temperatureDest"></p>
+			</td>				
+		</tr>
+		
+		<tr>
+			<td>
+				<div style="position: relative;">
+					<div style="position: absolute; left: auto;">
+						<p id="fog"></p>
+					</div>
+					<div style="position: absolute; left: 110px;">
+						<p id="lowClouds"></p>
+					</div>
+					<div style="position: absolute; left: 220px;">
+						<p id="mediumCluods"></p>
+					</div>
+					<div style="position: absolute; left: 330px;">
+						<p id="highClouds"></p>
+					</div>
+				</div>
+			</td>
+					
+			
+			<td>
+				<div style="position: relative;">
+					<div style="position: absolute; left: auto;">
+						<p id="fogDest"></p>
+					</div>
+					<div style="position: absolute; left: 110px;">
+						<p id="lowCloudsDest"></p>
+					</div>
+					<div style="position: absolute; left: 220px;">
+						<p id="mediumCluodsDest"></p>
+					</div>
+					<div style="position: absolute; left: 330px;">
+						<p id="highCloudsDest"></p>
+					</div>
+				</div>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<img id="slika1" style="display:none;"  src="/pictures/fog20.png">
+				<img id="slika2" style="display:none;" src="/pictures/fog20.png"> 
+				<img id="slika3" style="display:none;" src="/pictures/fog20.png"> 
+				<img id="slika4" style="display:none;" src="/pictures/fog20.png">
+			</td>
+			
+			<td>
+				<img id="slika5" style="display:none;" src="/pictures/fog20.png">
+				<img id="slika6" style="display:none;" src="/pictures/fog20.png"> 
+				<img id="slika7" style="display:none;" src="/pictures/fog20.png"> 
+				<img id="slika8" style="display:none;" src="/pictures/fog20.png">		
+			</td>		
+		</tr>
+	</table>
+</body>
+</html>
